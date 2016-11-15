@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/order_sch_lv_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/order_schedule_item_listview_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="南瓜豆沙" />
+
+        <ImageView
+            android:id="@+id/order_schedule_item_listview_im"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/order_schedule_item_listview_progress"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/order_schedule_item_listview_isdo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已上菜" />
+
+</LinearLayout>

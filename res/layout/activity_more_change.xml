@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:layout_alignBottom="@+id/more_change_now"
+        android:id="@+id/more_change_now_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/more_change_free_text"
+        android:layout_toLeftOf="@+id/more_change_now"
+        android:text="当前桌号" />
+
+    <TextView
+        android:layout_alignBottom="@+id/more_change_free"
+        android:id="@+id/more_change_free_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/more_change_free_text"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/more_change_free"
+        android:text="替换桌号" />
+
+    <Spinner
+        android:id="@+id/more_change_now"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/more_change_free"
+        android:layout_centerInParent="true"
+        android:entries="@array/table_num" />
+
+    <Spinner
+        android:id="@+id/more_change_free"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:layout_toRightOf="@id/more_change_free_text"
+        android:id="@+id/more_change_certain"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_below="@id/more_change_free"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/change_ok" />
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:id="@+id/more_change_back"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_below="@id/more_change_free"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/more_change_certain"
+        android:background="@drawable/back" />
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="table_num">
+        <item>101</item>
+        <item>102</item>
+        <item>103</item>
+        <item>104</item>
+        <item>201</item>
+        <item>202</item>
+        <item>203</item>
+        <item>301</item>
+        <item>302</item>
+    </string-array>
+    <string-array name="food_type">
+        <item>全部</item>
+        <item>主食</item>
+        <item>凉菜</item>
+        <item>汤羹</item>
+        <item>热菜</item>
+    </string-array>
+
+</resources>

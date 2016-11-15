@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/launch_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/launch_bottom"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_bg" >
+
+        <TextView
+            android:id="@+id/launch_user_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="70dp"
+            android:text="用户名"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/launch_password_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/launch_user_text"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:text="密    码"
+            android:textSize="25sp" />
+
+        <EditText
+            android:singleLine="true"
+            android:id="@+id/launch_user_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/launch_user_text"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@id/launch_user_text"/>
+
+        <EditText
+            android:singleLine="true"
+            android:id="@+id/launch_password_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/launch_password_text"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@id/launch_password_text"/>
+
+        <Button
+            android:id="@+id/launch_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/launch_password_edit"
+            android:layout_below="@id/launch_password_edit"
+            android:background="@drawable/menu_btn"
+            android:text="登陆" />
+
+        <Button
+            android:layout_alignRight="@id/launch_password_edit"
+            android:id="@+id/launch_register_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/launch_password_edit"
+            android:layout_toLeftOf="@id/launch_password_edit"
+            android:background="@drawable/menu_btn"
+            android:text="注册"
+            android:visibility="gone" />
+
+        <RadioGroup 
+            android:layout_alignRight="@id/launch_register_btn"
+            android:layout_alignLeft="@id/launch_btn"
+            android:layout_below="@id/launch_btn"
+            android:orientation="horizontal"
+            android:id="@+id/launch_rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/launch_userbtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/launch_btn"
+            android:layout_below="@id/launch_btn"
+            android:text="会员"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/launch_serverbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/launch_register_btn"
+            android:layout_below="@id/launch_register_btn"
+            android:text="服务员"
+            android:textSize="15sp" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/launch_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/layout_menu_bottom" />
+
+</RelativeLayout>

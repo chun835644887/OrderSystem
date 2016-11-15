@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_background" >
+
+    <TextView
+        android:id="@+id/checkout_datetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="日期：" />
+
+    <TextView
+        android:id="@+id/checkout_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/checkout_datetext"
+        android:layout_toRightOf="@id/checkout_datetext"
+        android:text="2016年9月" />
+
+    <TextView
+        android:id="@+id/activity_count_tablenum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:text="101" />
+
+    <TextView
+        android:id="@+id/checkout_numtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/activity_count_tablenum"
+        android:layout_toLeftOf="@id/activity_count_tablenum"
+        android:text="桌号：" />
+
+    <RelativeLayout
+        android:id="@+id/checkout_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkout_datetext"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/layout_menu_bottom" >
+
+        <TextView
+            android:id="@+id/activity_count_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="流水号" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:text="选择" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/activity_count_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/activity_count_btn_back"
+        android:layout_below="@id/checkout_linear" >
+    </ListView>
+
+    <Button
+        android:id="@+id/activity_count_btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/change_ok" />
+
+    <Button
+        android:id="@+id/activity_count_btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/activity_count_btn_submit"
+        android:background="@drawable/back"/>
+
+</RelativeLayout>
